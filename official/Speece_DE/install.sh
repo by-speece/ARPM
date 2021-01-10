@@ -50,19 +50,19 @@ do
             ln -s ~/.settings/config/alacritty	~/.config/
             ;;
         2)
-            sudo pacman -Syu --needed --noconfirm -<~/.tools/ARPM/packages/Speece_DE/dependencies/base-repo.txt
+            sudo pacman -Syu --needed --noconfirm -<~/.tools/ARPM/official/Speece_DE/dependencies/base-repo.txt
             sudo chmod +s /usr/bin/light
             ;;
         3)
-            yay -Syu --noconfirm --needed -<~/.tools/ARPM/packages/Speece_DE/dependencies/base-aur.txt
+            yay -Syu --noconfirm --needed -<~/.tools/ARPM/official/Speece_DE/dependencies/base-aur.txt
             sudo rm -rf /etc/systemd/system/display-manager.service
             sudo systemctl enable ly.service
             ;;
         4)
-            sudo pacman -Syu --needed --noconfirm -<~/.tools/ARPM/packages/Speece_DE/dependencies/extra-repo.txt
+            sudo pacman -Syu --needed --noconfirm -<~/.tools/ARPM/official/Speece_DE/dependencies/extra-repo.txt
             ;;
         5)
-            yay -Syu --noconfirm --needed -<~/.tools/ARPM/packages/Speece_DE/dependencies/extra-aur.txt
+            yay -Syu --noconfirm --needed -<~/.tools/ARPM/official/Speece_DE/dependencies/extra-aur.txt
             ;;
     esac
 done
