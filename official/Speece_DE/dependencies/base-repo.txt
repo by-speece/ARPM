@@ -13,7 +13,9 @@ filemanager-actions
 nautilus-image-converter
 python-nautilus
 file-roller
+nautilus
 papirus-icon-theme
+pavucontrol
 curl
 wget
 gedit
@@ -37,3 +39,4 @@ adobe-source-han-serif-jp-fonts
 otf-ipafont
 ttf-hanazono
 ranger
+signal-desktop

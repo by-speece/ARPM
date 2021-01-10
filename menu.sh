@@ -4,12 +4,11 @@ HEIGHT=15
 WIDTH=60
 CHOICE_HEIGHT=4
 BACKTITLE=".settings Management"
-TITLE=".settings Management"
+TITLE="Arch Rice Package Management Menu"
 MENU="What you want to do?"
 
-OPTIONS=(1 "Backup of your rice"
-         2 "Install Configured Rice"
-         3 "Create your .settings")
+OPTIONS=(1 "Install Configured Rice from official repo"
+         2 "Install Configured Rice from community repo")
 
 
 CHOICE=$(whiptail --clear \
@@ -23,14 +22,10 @@ CHOICE=$(whiptail --clear \
 clear
 case $CHOICE in
         1)
-            sh settings/backup.sh
+            sh ~/.tools/ARPM/official/menu.sh
             ;;
         2)
-            sh settings/configmenu.sh
+            sh ~/.tools/ARPM/community/menu.sh
             ;;
-        3)
-            sh sh settings/yoursettings.sh
-            ;;
-
 esac
 sh tools
