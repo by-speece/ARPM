@@ -1,5 +1,5 @@
 HEIGHT=30
-WIDTH=130
+WIDTH=50
 CHOICE_HEIGHT=10
 BACKTITLE="Official configs menu"
 TITLE="Official configs menu"
