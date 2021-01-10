@@ -11,7 +11,7 @@ for choice in $choices
 do
     case $choice in
         1)
-            rm ~/.settings
+            rm -rf ~/.settings
             mkdir ~/.settings
             cp -rfa ~/.tools/ARPM/official/Speece_DE/.  ~/.settings
             rm -rf ~/.config/gtk-3.0
