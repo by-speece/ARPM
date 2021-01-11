@@ -90,6 +90,16 @@ set $ws0 "0"
 
 #Workspace for left screen
 workspace $ws0 output $Lmon
+#Workspace for Right Screen
+workspace $ws1	output $Rmon
+workspace $ws2	output $Rmon
+workspace $ws3	output $Rmon
+workspace $ws4	output $Rmon
+workspace $ws5	output $Rmon
+workspace $ws6	output $Rmon
+workspace $ws7	output $Rmon
+workspace $ws8	output $Rmon
+workspace $ws9	output $Rmon
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
